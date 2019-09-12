@@ -1,0 +1,19 @@
+{
+  "name": "templogger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/cli/index.js",
+  "scripts": {
+    "start": "parcel -d dev src/index.html",
+    "build": "parcel build -d public src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.5.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "templogger-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@serialport/parser-readline": "^2.0.2",
+    "firebase-admin": "^8.5.0",
+    "serialport": "^7.1.5"
+  }
+}
