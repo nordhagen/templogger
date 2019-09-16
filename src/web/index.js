@@ -1,3 +1,10 @@
-let app = firebase.app()
+import Vue from 'vue'
+import App from './App'
+import store from './store'
 
-app.database().collection('templogger')
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  store,
+  render: h => h(App)
+})
