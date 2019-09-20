@@ -11,10 +11,10 @@ export default {
     return ref.docs.map(doc => doc.id)
   },
   async getLogfile(id) {
-    const ref = await firestore
+    const snapshot = await firestore
       .collection('templogger')
       .doc(id)
       .get()
-    return ref
+    return snapshot.data()
   }
 }

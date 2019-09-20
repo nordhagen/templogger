@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.6.0",
+    "chart.js": "^2.8.0",
     "firebase": "^6.6.1",
     "firebase-admin": "^8.5.0",
     "vue": "^2.6.10",

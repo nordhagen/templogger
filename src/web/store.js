@@ -28,18 +28,10 @@ const mutations = {
 // actions are functions that cause side effects and can involve
 // asynchronous operations.
 const actions = {
-  fetchLogfiles: ({ commit }) => commit('increment'),
-  decrement: ({ commit }) => commit('decrement'),
-  incrementIfOdd({ commit, state }) {
-    if ((state.count + 1) % 2 === 0) {
-      commit('increment')
-    }
-  },
   fetchLogfiles({ commit }) {
     return new Promise((resolve, reject) => {
       firebase.getLogfiles().then(logfiles => {
         commit('setLogfiles', logfiles)
-        console.log(logfiles)
         resolve()
       })
     })
@@ -48,6 +40,7 @@ const actions = {
     return new Promise((resolve, reject) => {
       firebase.getLogfile(id).then(logfile => {
         commit('setLogfile', logfile)
+        console.log(logfile)
         resolve()
       })
     })
